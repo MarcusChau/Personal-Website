@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="/dist/output.css">
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+        <!-- Font -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+        </style>
+        <!-- lottie files import -->
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <!-- Title -->
+        <title>About Me</title>
+    </head>
+
+    <body class="bg-black-brown text-white">
+        <!-- Navbar goes here -->
+        <header>
+            <nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-8 text-lg text-gray-700 bg-white">
+                <div class="md:p-4 py-2 hover:shadow-md hover:border-2 border-black rounded-lg ">
+                    <a class="font-bold" href="index.html">Home</a>
+                </div>
+                <!-- Hamburger Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block" fill="none" viewBox="0 0 24 24" stroke="black" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Navigation items -->
+                <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+                    <ul class="text-base text-black pt-4 md:flex md:justify-between md:pt-0">
+                        <li>
+                            <a class="md:p-4 py-2 block hover:shadow-md hover:border-2 border-black rounded-lg font-semibold" href="AboutMe.html">About Me</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:shadow-md hover:border-2 border-black rounded-lg font-semibold" href="Blog.html">Blogs</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:shadow-md hover:border-2 border-black rounded-lg font-semibold" href="Projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:shadow-md hover:border-2 border-black rounded-lg font-semibold" href="More.html">More</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:shadow-md hover:border-2 border-black rounded-lg font-semibold" href="img/College Resume - Marcus Chau (14).pdf" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Body -->
+        <div>
+            <!-- About me section -->
+            <div class="flex-shrink md:flex justify-center gap-16 my-4 px-4 pt-8 mb-20">
+                <!-- Image on left -->
+                <div>
+                    <img src="img/Self Image.JPG" class="w-80 m-0 rounded-xl animate-fade" alt="Portrait">
+                    <br>
+                    <br>
+                    <div class="flex-col border-b-2 border-some-blue text-[12px] w-[125px] pb-[9px] hover:cursor-default" id="scroll-more">
+                        <div>SCROLL FOR MORE</div>
+                    </div>
+                </div>
+                <!-- Text on the right -->
+                <div class="flex-shrink md:flex">
+                    <div class="w-[500px] js-show-on-scroll">
+                        <div id="delayedShowAbout">
+                            <h1 class="flex items-center justify-center py-2 md:text-[35px] font-semibold hover:cursor-default">About Me</h1>
+                            
+                            <h3 class="md:text-[19px] font-medium hover:cursor-default">I'm a first-year undergraduate studying Computer Science and thinking about minoring in Buisness Studies at New York University</h3>
+                        
+                            <br>
+
+                            <p class="md:text-[15px] hover:cursor-default">
+                                I am planning on becoming a Full-stack Developer with some knowledge in machine learning. I enjoy taking complex problems and turning them into real world applications.
+                                I also love the creativity and struture of coding and always strive to write neat and efficient code, whether it be Python, HTML/CSS, React Native or JavaScript.
+                            </p>
+
+                            <br>
+
+                            <p class="md:text-[15px] hover:cursor-default">
+                                Beyond school and coding, you'll find me either: in the gym, shooting some hoops or exploring NYC.
+                                On top of that, I am always listening to music.
+                            </p>
+                        </div>
+
+                        <!-- Socail media handles -->
+                        <div class="w-[500px]">
+                            <ul class="flex items-center justify-between" id="icons">
+                                <li>
+                                    <lottie-player onclick="window.open('https://www.instagram.com/marcus_chau_/' + location.search)" class="w-[75px] h-[75px] hover:cursor-pointer hover:scale-125" src="https://assets3.lottiefiles.com/packages/lf20_mfvpbnet.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                </li>
+                                <li>
+                                    <lottie-player onclick="window.open('https://www.linkedin.com/in/marcus-chau-b88878221/' + location.search)" class="w-[40px] h-[40px] hover:cursor-pointer hover:scale-125" src="https://assets5.lottiefiles.com/packages/lf20_b04ltv0r.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                </li>
+                                <li>
+                                    <lottie-player onclick="window.open('https://github.com/MarcusChau' + location.search)" class="w-[40px] h-[40px] hover:cursor-pointer hover:scale-125" src="https://assets4.lottiefiles.com/packages/lf20_kq6zs04j.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                </li>
+                                <li>
+                                    <lottie-player onclick="window.open('https://www.youtube.com/channel/UCVr_FBbu-EICLoV8tuaU63A' + location.search)" class="w-[65px] h-[65px] hover:cursor-pointer hover:scale-125" src="https://assets6.lottiefiles.com/private_files/lf30_cwyafad8.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                </li>
+                                <li>
+                                    <lottie-player onclick="location.href='mailto:marcus.webcon@gmail.com?Subject=Ticket%20Inquiry'" class="w-75px] h-[75px] hover:cursor-pointer hover:scale-125" src="https://assets5.lottiefiles.com/packages/lf20_tszzqucf.json"  background="transparent" speed="1" loop autoplay></lottie-player>
+                                </li>
+                            </ul>
+                            <div class="md:text-[12px] font-light p-0 hover:cursor-default" id="social-exp">
+                                <p>Click on icons to explore my socials!</p>
+                            </div>                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Skillset section -->
+            <div class="flex-shrink md:flex justify-center gap-32 my-4 px-4 pt-8 mb-44 js-show-on-scroll" id="Skillset-section">
+                <div>
+                    <h3 class="font-medium hover:cursor-default">My SKILLSET</h3>
+                    <br>
+                    <div class="font-semibold text-[40px] hover:cursor-default">
+                        <h1>Full Stack Development &</h1>
+                        <h1>User Experience</h1>
+                    </div>
+                    <br>
+                    <div class="flex-col border-b-2 border-some-blue text-[14px] w-[125px] pb-[9px] hover:cursor-default" id="recent-prj">
+                        <div>Recent Project</div>
+                    </div>
+                </div>
+
+                <div class="w-[475px] hover:cursor-default">
+                    <P class="text-[16px]">
+                        I am working to become a Full-stack developer, so my specializations vary. I have created many programs that have real world applications. I would say my front-end is stronger than my backend as I have been working with front-end longer.
+                        I enjoy creating effortless user experience and designing real world applications. The entire process from understanding user simplicity to the designing and coding of the product/projects is what makes me love computer science.
+                    </P>
+                </div>
+            </div>
+
+
+            <!-- Projects -->
+            <div class="bg-reclaim-blue js-show-on-scroll mb-12">
+                <div class="flex items-center justify-center">
+                    <div class="w-[1000px]">
+                        <div class="text-[30px]">
+                            <h1 class="text-white hover:cursor-default pb-4">Recent Project <span class="text-some-blue font-semibold">+</span></h1>
+                        </div>
+                        <div class="carousel relative shadow-2xl">
+                            <div class="carousel-inner relative overflow-hidden w-full">
+                                <!-- Slide One -->
+                                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                                <div class="carousel-item absolute bg-reclaim-blue opacity-0 h-[75vh]">
+                                    <div class="flex justify-center space-x-24 fill">
+                                        <div class="flex-shrink md:flex">
+                                            <img class="object-contain w-[200px] cursor-zoom-in hover:scale-150" src="img/Reclaim_splashscreen.PNG" alt="Reclaim splash">
+                                        </div> 
+                                        <div class="flex-shrink md:flex">
+                                            <img class="object-contain w-[200px] cursor-zoom-in hover:scale-150" src="img/Reclaim2.PNG" alt="Reclaim 2">
+                                        </div>  
+                                        <div class="flex-shrink md:flex">
+                                            <img class="object-contain w-[200px] cursor-zoom-in hover:scale-150" src="img/Reclaim3.PNG" alt="Reclaim 3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="carousel-3" class="prev control-1 w-20 h-20 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full border border-some-blue hover:bg-reclaim-blue leading-tight text-center pt-4 z-10 inset-y-0 left-0 my-auto">‹</label>
+                                <label for="carousel-2" class="next control-1 w-20 h-20 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full border border-some-blue hover:bg-reclaim-blue leading-tight text-center pt-4 z-10 inset-y-0 right-0 my-auto">›</label>
+                                
+                                <!--Slide 2-->
+                                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                                <div class="carousel-item absolute opacity-0 h-[75vh]">
+                                    <lottie-player class="fill" src="https://assets2.lottiefiles.com/packages/lf20_4s3kvfcn.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <label for="carousel-1" class="prev control-2 w-20 h-20 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full border border-some-blue hover:bg-reclaim-blue leading-tight text-center pt-4 z-10 inset-y-0 left-0 my-auto">‹</label>
+                                <label for="carousel-3" class="next control-2 w-20 h-20 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full border border-some-blue hover:bg-reclaim-blue leading-tight text-center pt-4 z-10 inset-y-0 right-0 my-auto">›</label> 
+                                
+                                <!--Slide 3-->
+                                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                                <div class="carousel-item absolute opacity-0 h-[75vh]">   
+                                    <lottie-player class="fill" src="https://assets2.lottiefiles.com/packages/lf20_4s3kvfcn.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+                                </div>
+                                <label for="carousel-2" class="prev control-3 w-20 h-20 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full border border-some-blue hover:bg-reclaim-blue leading-tight text-center pt-4 z-10 inset-y-0 left-0 my-auto">‹</label>
+                                <label for="carousel-1" class="next control-3 w-20 h-20 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-white rounded-full border border-some-blue hover:bg-reclaim-blue leading-tight text-center pt-4 z-10 inset-y-0 right-0 my-auto">›</label>
+
+                                <!-- Add additional indicators for each slide-->
+                                <ol class="carousel-indicators">
+                                    <li class="inline-block mr-3">
+                                        <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-brass">•</label>
+                                    </li>
+                                    <li class="inline-block mr-3">
+                                        <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-brass">•</label>
+                                    </li>
+                                    <li class="inline-block mr-3">
+                                        <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-brass">•</label>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </body>
+
+    <script>
+        const button = document.querySelector('#menu-button'); // Hamburger Icon
+        const menu = document.querySelector('#menu'); // Menu
+
+        button.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        });
+
+        // Scroll fadeIn
+        const callback = function (entries) {
+            entries.forEach((entry) => {
+              console.log(entry);
+          
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate-fadeIn");
+              } else {
+                entry.target.classList.remove("animate-fadeIn");
+              }
+            });
+          };
+
+        const observer = new IntersectionObserver(callback);
+        
+        const targets = document.querySelectorAll(".js-show-on-scroll");
+        targets.forEach(function (target) {
+            target.classList.add("opacity-0");
+            observer.observe(target);
+        })
+    </script>
+</html>
